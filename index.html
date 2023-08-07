@@ -3,54 +3,26 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 <style>
-  body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: #f0f0f0;
-  }
-  .info-container{
-    white-space: pre-line;
-  }
-
-  .username-container {
-    background-color: #fff;
-    border-radius: 4px;
-    padding: 20px;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
-    width: 100%;
-    max-width: 400px;
-  }
-
-  .username-input {
-    width: 100%;
-    padding: 8px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    font-size: 16px;
-  }
-
   .info-container {
-    margin-top: 20px;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    font-size: 16px;
+    white-space: pre-line;
   }
 </style>
 <title>Username Information</title>
 </head>
 <body>
-  <div class="username-container">
-    <label for="usernameInput">Enter your username:</label>
-    <input type="text" class="username-input" id="usernameInput" placeholder="Username...">
-    <button onclick="fetchInformation()">এইখানে Click করুন । তাহলে event থেকে যারা আপনাকে Follow Back করে করে নাই তাদের List চলে আসবে💯</button>
-    <div class="info-container" id="infoContainer"></div>
+  <div class="container mt-5">
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <div class="username-container p-4 border rounded shadow">
+          <label for="usernameInput">Enter your username:</label>
+          <input type="text" class="form-control mb-2" id="usernameInput" placeholder="Username...">
+          <button class="btn btn-primary" onclick="fetchInformation()">Get Information</button>
+          <div class="info-container mt-3" id="infoContainer"></div>
+        </div>
+      </div>
+    </div>
   </div>
 
   <script>
@@ -62,10 +34,10 @@
       // For this example, we're using a simple switch statement
       let information = '';
       switch (username.toLowerCase()) {
-        case '_spicy__girlfrd':
+        case '_spicy__girlfrnd':
           information = '\n\n@hey_nahid_ @brand_.event @ig_rabbi @tanishaw28 @forsage_io._ @brand__community._ @yourbroher @mr.x_1_1_x @limon.09k @chauhan.anan @spicy__girlfrnd @your__sweet__bee @sahedul424 @abid__35 @sajjad_hossain2468 @dj_babu_100k @bdc_community_22 @akid.khan.786 @basurhat_community @bdc_royal_family @amorouspsycho @n_h_maruf @hiya_ji0 @naziha_islam199 @taiba.ashraf @a_phobicc.mahi @sadi.a1825 @lyrics_on7x @ve_nom_king_41 @ben__cornel @wahajedits2023 @ankon_das_411 @itz__raku__13 @oh_crazy_one @its_redwan_84 @hafijul_islam @your__arafat__1859 @pakhi_75 @as_h_ik___ @darkstatus100 @shifat__raider_ @s___m___ramim @its_ur.tanvir @aashiq_khan_8189 @naiem_ul29037 @ri_fu_09 @your_hunter @hossain.ahmed_ @hayat__xchowdry @tomar_apu @skylove082023 @itz_olivia0_4 @oporichito_chena_manush123 @itz.soumilidasgupta @muslima_mariyam @rifat___6t9 @raihanahmed_01 @shawon__09 @taznim_mahmud_jishad @ms.chowdhury @mahmud_tareq @tmar_boin_0 @ms.chy @rabbi___xah @syssanjana @ff9 @jahidulbappi @hri_doy_61 @marjan_ah_med @keya_official990 @dmn_itz_nahar @prince_sadin_909 @keya.990 @fariaakther716 @its_mohiuddin_79 @itz_your_sheikh_009 @nasuu_33 @1_4_3_bbz @warish_ot7 @ma__shuk @tanjil.king_xo @sra_bon_28 @madridista_2.0 @jaiswal_3544 @mehedihasan01_ @papa..bear_ @nayemm_02 @loftyaesthetic.0 @noicy_swagoto @farjana____akter___ @lady_lazy_catt @lily__94 @mir.ahmed_00 @shihabchy04 @nishat_okay @mahfug_03 @sefat_ahmed200 @iftekhar_shovon @munna__03 @bdc_club90 @said_sadik @rafin_six9 @dinas_khan_07 @its_jasmin_2002 @mehraj_1620 @m.i.nahid @ariyan__0.8 @md_jihad_hossin @j.erry_22531 @tanjimbushra7 @abdullah.mutasahil @rahmansumaiya785 @its_hasan @lsrat_jahan5 @digital_marketer7x @m_a_r_i_a__s_n_e_h_a @your_meaw.7 @naurin_ahmed356 @insta_circle_bd @jihad.rs @the_alvi @ans_ari4328 @tanhachowdhury9 @jafrin_jana__ @cricketer_ajoy_ @naima_reem @anik_islam_99 @tepi_putul_ @ahsankabir7756 @mr_zobayer_hossain @anikamim21 @shaaa_mim_ @kzaman85200 @brother__rana__ @dream___peace69 @ridi__ka @fahmida_islam_maria @shamim_officials2 @queen__bee__ @a.r.1.f_';
           break;
-        case '@_afgan_jalebi_':
+        case '_afgan_jalebi_':
           information = '@hey_nahid._, @brand_.event, @rudro_islam2, @ig_rabbi, @__.chuto_vai.__, @_mahedi_emon_, @tahsinbaf, @tanishaw28, @callme_maasud, @bdrshoutoutprmo, @forsage_io._, @brand__community._, @yourbroher, @mr.x_1_1_x, @limon.09k, @chauhan.anan, @__your__sweet__bee, @sahedul424, @abid__35, @sajjad_hossain2468, @maisuna33, @dj_babu_100k, @bdc_community_22, @akid.khan.786, @basurhat_community_, @bdc_royal_family, @sadia_jaannat, @a_m_ajoy, @naziha_islam199, @its_hridoy_sheikh, @_taiba.ashraf_, @a_phobicc.mahi, @lyrics_on7x, @ve_nom_king_41, @its_iftiak, @ben__cornel, @wahajedits2023, @hridoy_ofcl, @_oh_crazy_one, @chloroform_001, @_hafijul_islam_, @saiyara__04, @__your__arafat__1859__, @af_sana__hossain_3, @yasintaha180, @_afgan_jalebi_, @_pakhi_75, @as_h_ik________, @darkstatus100, @safayatull7, @shifat__raider_, @_minar_hossain_, @siam_ahmed433, @opu.khan.iv, @s___m___ramim, @ahmedjabed041, @its_ur.tanvir, @aashiq_khan_8189, @bd_kidzclub, @only_yours_bbz, @naiem_ul29037, @_ri_fu_09_, @arzon_robin, @__your_hunter__, @hossain.ahmed_, @tomar_apu, @skylove082023, @itz_olivia0_4, @rafiabinterafiqulislam, @opekkha_bd_, @oporichito_chena_manush123, @its_takib, @a_h.rafi, @itz.soumilidasgupta, @rifat___6t9, @raihanahmed_01, @tabitunislamtiza, @__shawon__09, @taznim_mahmud_jishad, @_ms.chowdhury__, @raihan_bishal, @_mahmud_tareq, @loner_boy_abir300_6, @tmar_boin_0, @heros_photography, @_sraby_, @_ms.chy__, @spicygirl977, @sanjana1172_, @rabbi___xah, @n_a_f_i_s_r_a_f_i, @_ff9___, @jahidulbappi, @hri_doy_61, @badass___captain, @keya_official990, @dmn_itz_nahar, @piyaashi_, @prince_sadin_909, @keya.990, @himels_bleh_thingss, @your_rahib, @playdate.himel, @fariaakther716, @its_mohiuddin_79, @itz_your_sheikh_009, @_nasuu_33, @1_4_3_bbz, @warish_ot7, @__saku_99__, @ma__shuk, @tanjil.king_xo, @sra_bon_28, @bd_ayman11, @emrankhan903, @madridista_2.0_, @jaiswal_3544, @mehedihasan01_, @_papa._.bear_, @nayemm_02, @_rosee_queen_, @jonayed_9, @_loftyaesthetic_.0, @sabbirebnur, @imran_khan_1135, @sepiagraphy__by__nafia, @farjana____akter___, @_tiktokr_onujit_0, @lady_lazy_catt, @_lily__94, @mir.ahmed_00, @suparnaaaaaaaa, @shihabchy04, @_mr._pinic_pie_, @nishat_okay, @__zaria___jannat__, @fatematasnim180, @ohona.__, @mahfug_03, @sefat_ahmed200, @iftekhar_shovon, @____mrs__bushra___19, @__munna__03, @bdc_club90, @said_sadik_, @rafin_six9, @dinas_khan_07, @_its_jasmin_2002, @m.i.nahid_, @___remain___silent___, @mx.yasir, @_oishyeeee_86, @raftarfahad09, @md_jihad_hossin, @j.erry_22531, @___chocolate_boy__07, @tanjimbushra7, @abdullah.mutasahil, @faru_08, @rahmansumaiya785, @lsrat_jahan5, @bristy_00982, @digital_marketer7x, @sawpnil.das.0, @maybe._.sumu, @sheikh.sabbir.376695, @minhajahmed835, @m_a_r_i_a__s_n_e_h_a, @_your_meaw.7, @mirza_rasel, @ahnafnahian2005, @atiiqur_rahman, @nahien9__, @bachelor_teacher_97, @insta_circle_bd, @jihad.rs, @the_alvi__, @ans_ari4328, @tanhachowdhury9, @jafrin_jana__, @___taa_nzz__, @cricketer_ajoy_, @_mishma_khandaker_0149, @naima_reem, @hridoy.ofcl, @a.z.m_alahi, @anik_islam_99, @azazurrahmann, @tepi_putul_, @robiul_islam__rafi, @mr_zobayer_hossain, @anikamim21, @shaaa_mim_, @callme_samanta, @smart_boy_somjit, @kzaman85200, @oggy_2_43, @sarasabihaislam, @sabiha___03, @1ka4sh_x_x, @panjabi_wala_bd, @itz.afridi.11, @ridi__ka, @fahmida_islam_maria, @shamim_officials2, @___queen__bee_____, @sadia_subrin_chowa, @a.r.1.f_, @sumaiya_shimu_.97, @_sahariar_rahman,';
           break;
         case 'mr_kowsar_29':
