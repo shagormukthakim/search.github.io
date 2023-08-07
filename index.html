@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+  }
+
+  .username-container {
+    background-color: #fff;
+    border-radius: 4px;
+    padding: 20px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+  }
+
+  .username-input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+
+  .info-container {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+</style>
+<title>Username Information</title>
+</head>
+<body>
+  <div class="username-container">
+    <label for="usernameInput">Enter your username:</label>
+    <input type="text" class="username-input" id="usernameInput" placeholder="Username...">
+    <button onclick="fetchInformation()">Get Information</button>
+    <div class="info-container" id="infoContainer"></div>
+  </div>
+
+  <script>
+    function fetchInformation() {
+      const username = document.getElementById('usernameInput').value;
+      const infoContainer = document.getElementById('infoContainer');
+
+      // Replace this with your actual logic to retrieve and display information
+      // For this example, we're using a simple switch statement
+      let information = '';
+      switch (username.toLowerCase()) {
+        case 'user1':
+          information = '\n\n@hey_nahid_ @brand_.event @ig_rabbi @tanishaw28 @forsage_io._ @brand__community._ @yourbroher @mr.x_1_1_x @limon.09k @chauhan.anan @spicy__girlfrnd @your__sweet__bee @sahedul424 @abid__35 @sajjad_hossain2468 @dj_babu_100k @bdc_community_22 @akid.khan.786 @basurhat_community @bdc_royal_family @amorouspsycho @n_h_maruf @hiya_ji0 @naziha_islam199 @taiba.ashraf @a_phobicc.mahi @sadi.a1825 @lyrics_on7x @ve_nom_king_41 @ben__cornel @wahajedits2023 @ankon_das_411 @itz__raku__13 @oh_crazy_one @its_redwan_84 @hafijul_islam @your__arafat__1859 @pakhi_75 @as_h_ik___ @darkstatus100 @shifat__raider_ @s___m___ramim @its_ur.tanvir @aashiq_khan_8189 @naiem_ul29037 @ri_fu_09 @your_hunter @hossain.ahmed_ @hayat__xchowdry @tomar_apu @skylove082023 @itz_olivia0_4 @oporichito_chena_manush123 @itz.soumilidasgupta @muslima_mariyam @rifat___6t9 @raihanahmed_01 @shawon__09 @taznim_mahmud_jishad @ms.chowdhury @mahmud_tareq @tmar_boin_0 @ms.chy @rabbi___xah @syssanjana @ff9 @jahidulbappi @hri_doy_61 @marjan_ah_med @keya_official990 @dmn_itz_nahar @prince_sadin_909 @keya.990 @fariaakther716 @its_mohiuddin_79 @itz_your_sheikh_009 @nasuu_33 @1_4_3_bbz @warish_ot7 @ma__shuk @tanjil.king_xo @sra_bon_28 @madridista_2.0 @jaiswal_3544 @mehedihasan01_ @papa..bear_ @nayemm_02 @loftyaesthetic.0 @noicy_swagoto @farjana____akter___ @lady_lazy_catt @lily__94 @mir.ahmed_00 @shihabchy04 @nishat_okay @mahfug_03 @sefat_ahmed200 @iftekhar_shovon @munna__03 @bdc_club90 @said_sadik @rafin_six9 @dinas_khan_07 @its_jasmin_2002 @mehraj_1620 @m.i.nahid @ariyan__0.8 @md_jihad_hossin @j.erry_22531 @tanjimbushra7 @abdullah.mutasahil @rahmansumaiya785 @its_hasan @lsrat_jahan5 @digital_marketer7x @m_a_r_i_a__s_n_e_h_a @your_meaw.7 @naurin_ahmed356 @insta_circle_bd @jihad.rs @the_alvi @ans_ari4328 @tanhachowdhury9 @jafrin_jana__ @cricketer_ajoy_ @naima_reem @anik_islam_99 @tepi_putul_ @ahsankabir7756 @mr_zobayer_hossain @anikamim21 @shaaa_mim_ @kzaman85200 @brother__rana__ @dream___peace69 @ridi__ka @fahmida_islam_maria @shamim_officials2 @queen__bee__ @a.r.1.f_';
+          break;
+        case 'user2':
+          information = 'User 2 information: ...';
+          break;
+        default:
+          information = 'Username not found.';
+          break;
+      }
+
+      infoContainer.textContent = information;
+    }
+  </script>
+</body>
+</html>
